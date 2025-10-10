@@ -6,28 +6,6 @@ body,html{
     background-color: #191d2b;
 }
 
-/* MODIFICA BOX LOGHI */
-.page-item {
-    border: 0px solid #FFFFFF;
-    background: #FFFFFF ;
-    border-radius: 8px;
-    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
-    padding: 18px !important;
-    min-height: 65px !important;
-    display: flex !important;
-    align-items: center !important;
-    box-sizing: border-box !important;
-}
-
-/* LOGO O ICONA ALL'INTERNO DEL BOX */
-.page-social svg,
-.page-item img,
-.page-item svg {
-    width: 32px !important;
-    height: 32px !important;
-    margin-right: 12px !important;
-}
-
 /* --- CSS ORIGINALE DAL FILE --- */
 @-webkit-keyframes slidetounlock{
     0%{background-position:-100px 0}
