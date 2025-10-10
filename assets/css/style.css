@@ -1460,22 +1460,25 @@ body,html{
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 8px 12px !important; /* Mantiene spazio interno */
-    min-height: 80px !important; /* Altezza costante */
-    color: #1F365C !important; /* Colore testo originale */
+    padding: 10px 15px !important; /* Spazio interno regolato */
+    min-height: 80px !important; /* Altezza uniforme */
+    max-width: 300px !important; /* Limita larghezza del box */
+    width: 90% !important; /* Larghezza relativa al contenitore */
+    color: #1F365C !important;
     font-family: 'Inter', sans-serif !important;
     font-size: 16px !important;
     font-weight: 500 !important;
     text-transform: none !important;
     border-radius: 8px !important;
     text-decoration: none !important; /* Rimuove sottolineatura */
+    box-sizing: border-box; /* Include padding nella larghezza */
 }
 
 /* --- Testo del titolo all’interno del box --- */
 .page-item-each .item-title {
     color: black !important; /* Testo nero */
     text-decoration: none !important; /* Nessuna sottolineatura */
-    text-align: center !important; /* Centra il testo */
+    text-align: center !important; /* Centra testo */
 }
 
 /* --- Mantiene lo stile e l’allineamento immagine --- */
@@ -1486,9 +1489,10 @@ body,html{
     border-radius: 50% !important;
 }
 
-/* --- Impedisce modifiche indesiderate da altre regole --- */
+/* --- Contenitore dei box centrato --- */
 .page-item-wrap {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
 }
+
