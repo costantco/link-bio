@@ -1460,7 +1460,7 @@ body,html{
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 10px 20px !important; /* Mantiene spazio interno */
+    padding: 8px 12px !important; /* Mantiene spazio interno */
     min-height: 80px !important; /* Altezza costante */
     color: #1F365C !important; /* Colore testo originale */
     font-family: 'Inter', sans-serif !important;
