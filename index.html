@@ -1,93 +1,69 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Claudio Costantino links</title>
-    <meta name="description" content="Link Bio di Claudio Costantino - Pagina con i miei link social e professionali" />
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
+        <link rel="apple-touch-icon" sizes="360x360" href="images/favicon.png">
+        <link rel="icon" href="assets/images/favicon.png" type="image/webp">
+        <title>Claudio Costantino links</title>
+        <meta name="description" content="Link Bio di Claudio Costantino - Pagina con i miei link social e professionali" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Snowfall Background Animation -->
+        <section class="animated-background">
+            <div id="stars1"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section>
+        <!-- End of Snowfall Background Animation -->
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
-    <link rel="apple-touch-icon" sizes="360x360" href="assets/images/favicon.png">
-    <link rel="icon" href="assets/images/favicon.png" type="image/webp">
+        <div class="min-h-full flex-h-center" id="background_div">
+            <input type="hidden" value="https://bio.link" id="app-url">
+            <input type="hidden" value="null" id="is-featured">
+            <canvas id="bg-canvas" class="background-overlay"></canvas>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+            <div class="mt-48 page-full-wrap relative ">
+                <input type="hidden" value="creator-page" id="page-type">
+                <img class="display-image m-auto" data-src="assets/images/Screenshot 2025-09-12 110524.png" src="assets/images/Screenshot 2025-09-12 110524.png" alt="Claudio Costantino"/>
+                <h2 class="page-title page-text-color page-text-font mt-16 text-center">Claudio Costantino</h2>
 
-    <!-- Stile principale -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- Solo la modifica del font del nome -->
-    <style>
-        .page-title {
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 700;
-            text-align: center;
-            color: #ffffff;
-            margin-top: 1.5rem;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Mantiene l'effetto di sfondo originale -->
-    <section class="animated-background">
-        <div id="stars1"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-    </section>
-
-    <div class="min-h-full flex-h-center" id="background_div">
-        <input type="hidden" value="https://bio.link" id="app-url">
-        <input type="hidden" value="null" id="is-featured">
-        <canvas id="bg-canvas" class="background-overlay"></canvas>
-
-        <div class="mt-48 page-full-wrap relative">
-            <input type="hidden" value="creator-page" id="page-type">
-
-            <!-- FOTO PROFILO -->
-            <img class="display-image m-auto" src="assets/images/Screenshot 2025-09-12 110524.png" alt="Claudio Costantino">
-
-            <!-- NOME -->
-            <h2 class="page-title page-text-color page-text-font mt-16 text-center">Claudio Costantino</h2>
-
-            <!-- LINK -->
-            <div class="mt-24">
-
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a href="mailto:claudiocostantino@cnr.it" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/email.png" alt="Email Claudio Costantino"/>
-                        <span class="item-title text-center">Scrivimi</span>
-                    </a>
-                </div>
-
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" href="https://www.scitec.cnr.it/in3d-ita/metamorphosis" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/scitec.png" alt="Sito Metamorphosis"/>
-                        <span class="item-title text-center">Docu-serie Metamorphosis</span>
-                    </a>
-                </div>
-
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" href="https://www.linkedin.com/in/claudiocostantino/" class="page-item-each py-10 flex-both-center" data-id="261652" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/linkedin.png" alt="LinkedIn"/>
-                        <span class="item-title text-center">LinkedIn</span>
-                    </a>
-                </div>
-
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" href="https://www.instagram.com/costantco/" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/instagram.png" alt="Instagram"/>
-                        <span class="item-title text-center">Instagram</span>
-                    </a>
-                </div>
-
-            </div>                                                                                
+                <div class="mt-24">
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a href="mailto:claudiocostantino@cnr.it" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
+                            <img class="link-each-image" data-src="assets/images/email.png" src="assets/images/email.png" alt="Email Claudio Costantino"/>
+                            <span class="item-title text-center">Scrivimi</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" href="https://www.scitec.cnr.it/in3d-ita/metamorphosis" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
+                            <img class="link-each-image" data-src="assets/images/scitec.png" src="assets/images/scitec.png" alt="Sito Metamorphosis"/>
+                            <span class="item-title text-center">Docu-serie Metamorphosis</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" href="https://www.linkedin.com/in/claudiocostantino/" class="page-item-each py-10 flex-both-center" data-id="261652" data-type="page_item">
+                            <img class="link-each-image" data-src="assets/images/linkedin.png" src="assets/images/linkedin.png" alt="LinkedIn"/>
+                            <span class="item-title text-center">LinkedIn</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" href="https://www.instagram.com/costantco/" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
+                            <img class="link-each-image" data-src="assets/images/instagram.png" src="assets/images/instagram.png" alt="Instagram"/>
+                            <span class="item-title text-center">Instagram</span>
+                        </a>
+                    </div>
+                </div>                                                                                
+            </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+
+<!--
+    A different snowfall    
+    <script  src="assets/js/snowfall.js"></script>
