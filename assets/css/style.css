@@ -1463,7 +1463,10 @@ body,html{
     padding: 10px 15px !important; /* Spazio interno regolato */
     min-height: 80px !important; /* Altezza uniforme */
     max-width: 300px !important; /* Limita larghezza del box */
-    width: 90% !important; /* Larghezza relativa al contenitore */
+    width: 100% !important; /* Larghezza relativa al contenitore */
+    padding: 10px 15px !important;
+    margin: 10px auto !important; /* Centra orizzontalmente */
+    box-sizing: border-box !important;
     color: #1F365C !important;
     font-family: 'Inter', sans-serif !important;
     font-size: 16px !important;
