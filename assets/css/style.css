@@ -12,36 +12,45 @@ body,html{
     50%{background-position:100px 0}
     to{background-position:100px 0}
 }
+
 @keyframes slidetounlock{
     0%{background-position:-100px 0}
     10%{background-position:-100px 0}
     50%{background-position:100px 0}
     to{background-position:100px 0}
 }
+
 .min-h-full{
     min-height:100vh
 }
+
 .flex{
     display:flex
 }
+
 .flex-both-center{
     display:flex;
     justify-content:center;
     align-items:center
 }
+
 .flex-wrap{
     flex-wrap:wrap
 }
+
 .flex-h-center{
     display:flex;
     justify-content:center
 }
+
 .item-center{
     align-items:center
 }
+
 .flex-dir-c{
     flex-direction:column
 }
+
 .mx-auto{
     margin-left:auto;
     margin-right:auto
@@ -138,12 +147,6 @@ body,html{
     height:100vh;
     width:100vw
 }
-/* ... Continua con il resto delle regole originali, eventualmente lascia inalterato tutto il resto del CSS dal tuo file ... */
-
-/* NOTE: Le regole modificate sono all'inizio, subito sopra quelle di default. Così puoi sovrascrivere i valori di default e averli attivi su tutti i box con loghi. */
-
-/* Se hai loghi in altre classi, aggiungile alle regole di logo/icona! */
-
 .page-image {
     object-position: center;
 
@@ -169,14 +172,16 @@ body,html{
 }
 
 .page-item-each {
-    color: black !important; /* Colore testo */
+    color: #1F365C;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    text-transform: none !important;
+    text-transform: none;
     border-radius: 8px;
-    text-decoration: none; /* Rimuove sottolineatura */
+    
+    min-height: 60px;
 }
+
 .page-item-wrap {
     margin: 16px 0;
 }
@@ -280,20 +285,13 @@ body,html{
     object-fit:cover
 }
 
-.display-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    box-sizing: border-box;
-}
-
-}
-
+.display-image{
+    width:96px;
+    height:96px;
+    display:block;
+    border-radius:50%;
+    -o-object-fit:cover;
+    object-fit:cover
 }
 .text-center{
     text-align:center
@@ -311,9 +309,6 @@ body,html{
     width:680px;
     z-index:10;
     padding-bottom:176px
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .page-item-wrap{
     transition:transform .15s cubic-bezier(.17,.67,.29,2.71) 0s
@@ -428,18 +423,20 @@ body,html{
 .close-embed:hover{
     opacity:1
 }
+
 .cursor-pointer{
     cursor:pointer
 }
+
 .page-item-each{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-decoration:none;
+    overflow:hidden;
+    z-index:10;
+    box-sizing:border-box
 }
+
 .item-title{
-    width:100%;
-    text-align: center;
+    width:55%;
     word-break:break-word
 }
 .social-icon-anchor{
@@ -1452,66 +1449,5 @@ body,html{
     }
     to {
         transform: translateY(-2000px);
-    }
-}
-/* --- Stile generale dei box link --- */
-.page-item-each {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    /* Dimensioni */
-    width: 90% !important;         /* si adatta su mobile */
-    max-width: 260px !important;   /* limita la larghezza su desktop */
-    min-height: 80px !important;   /* altezza minima coerente */
-
-    /* Spaziature */
-    padding: 10px 15px !important;
-    margin: 10px auto !important;  /* centra orizzontalmente */
-
-    /* Stile testo */
-    color: #1F365C !important;
-    font-family: 'Inter', sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 500 !important;
-    text-transform: none !important;
-    text-decoration: none !important;
-
-    /* Aspetto e comportamento */
-    border-radius: 8px !important;
-    box-sizing: border-box !important;
-}
-
-/* --- Testo all’interno del box --- */
-.page-item-each .item-title {
-    color: black !important;
-    text-decoration: none !important;
-    text-align: center !important;
-}
-
-/* --- Contenitore dei box centrato --- */
-.page-item-wrap {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-}
-
-/* --- Immagine del profilo centrata e con bordo --- */
-.display-image {
-    display: block !important;
-    margin: 0 auto !important;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    border-radius: 50% !important;
-    width: 180px !important;       /* dimensione regolata */
-    height: auto !important;
-}
-
-/* --- Responsività: su schermi piccoli i box diventano più larghi --- */
-@media (max-width: 600px) {
-    .page-item-each {
-        max-width: 90% !important;
-        font-size: 15px !important;
-        padding: 8px 12px !important;
     }
 }
