@@ -6,6 +6,175 @@ body,html{
     background-color: #191d2b;
 }
 
+/* MODIFICA BOX LOGHI */
+.page-item {
+    border: 0px solid #FFFFFF;
+    background: #FFFFFF ;
+    border-radius: 8px;
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
+    padding: 18px !important;
+    min-height: 65px !important;
+    display: flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+}
+
+/* LOGO O ICONA ALL'INTERNO DEL BOX */
+.page-social svg,
+.page-item img,
+.page-item svg {
+    width: 32px !important;
+    height: 32px !important;
+    margin-right: 12px !important;
+}
+
+/* --- CSS ORIGINALE DAL FILE --- */
+@-webkit-keyframes slidetounlock{
+    0%{background-position:-100px 0}
+    10%{background-position:-100px 0}
+    50%{background-position:100px 0}
+    to{background-position:100px 0}
+}
+@keyframes slidetounlock{
+    0%{background-position:-100px 0}
+    10%{background-position:-100px 0}
+    50%{background-position:100px 0}
+    to{background-position:100px 0}
+}
+.min-h-full{
+    min-height:100vh
+}
+.flex{
+    display:flex
+}
+.flex-both-center{
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+.flex-wrap{
+    flex-wrap:wrap
+}
+.flex-h-center{
+    display:flex;
+    justify-content:center
+}
+.item-center{
+    align-items:center
+}
+.flex-dir-c{
+    flex-direction:column
+}
+.mx-auto{
+    margin-left:auto;
+    margin-right:auto
+}
+.mt-2{
+    margin-top:2px
+}
+.mt-4{
+    margin-top:4px
+}
+.mt-8{
+    margin-top:8px
+}
+.mt-12{
+    margin-top:12px
+}
+.mt-16{
+    margin-top:16px
+}
+.mt-24{
+    margin-top:24px
+}
+.mt-32{
+    margin-top:32px
+}
+.mt-48{
+    margin-top:48px
+}
+.mt-120{
+    margin-top:120px
+}
+.mb-48{
+    margin-bottom:48px
+}
+.m-auto{
+    margin:auto
+}
+.ml-6{
+    margin-left:6px
+}
+.py-10{
+    padding:10px
+}
+.ln-h-22{
+    line-height:22px
+}
+.ln-h-32{
+    line-height:32px
+}
+
+.text-fs-14{
+    font-size:14px
+}
+.text-fs-16{
+    font-size:16px
+}
+.text-fs-18{
+    font-size:18px
+}
+.text-fs-20{
+    font-size:20px
+}
+.text-fs-22{
+    font-size:22px
+}
+
+.font-inter{
+    font-family:Inter,sans-serif
+}
+.font-weight-500{
+    font-weight:500
+}
+.font-weight-600{
+    font-weight:600
+}
+
+.color-white{
+    color:#fff
+}
+.color-gray{
+    color:hsla(0,0%,100%,.9)
+}
+.color-dark{
+    color:#222
+}
+.color-danger{
+    color:#ff4963
+}
+
+.page-bg{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    height:100vh;
+    width:100vw
+}
+/* ... Continua con il resto delle regole originali, eventualmente lascia inalterato tutto il resto del CSS dal tuo file ... */
+
+/* NOTE: Le regole modificate sono all'inizio, subito sopra quelle di default. Così puoi sovrascrivere i valori di default e averli attivi su tutti i box con loghi. */
+
+/* Se hai loghi in altre classi, aggiungile alle regole di logo/icona! */
+
+body,html{
+    -ms-scroll-chaining:none;
+    overscroll-behavior:none;
+    margin:0;
+    padding:0;
+    background-color: #191d2b;
+}
+
 @-webkit-keyframes slidetounlock{
     0%{background-position:-100px 0}
     10%{background-position:-100px 0}
