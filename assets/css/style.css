@@ -1454,42 +1454,40 @@ body,html{
         transform: translateY(-2000px);
     }
 }
-/* --- Stile principale dei box --- */
+/* --- Stile generale dei box link --- */
 .page-item-each {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 10px 15px !important; /* Spazio interno regolato */
-    min-height: 80px !important; /* Altezza uniforme */
-    max-width: 300px !important; /* Limita larghezza del box */
-    width: 100% !important; /* Larghezza relativa al contenitore */
+
+    /* Dimensioni */
+    width: 90% !important;         /* si adatta su mobile */
+    max-width: 260px !important;   /* limita la larghezza su desktop */
+    min-height: 80px !important;   /* altezza minima coerente */
+
+    /* Spaziature */
     padding: 10px 15px !important;
-    margin: 10px auto !important; /* Centra orizzontalmente */
-    box-sizing: border-box !important;
+    margin: 10px auto !important;  /* centra orizzontalmente */
+
+    /* Stile testo */
     color: #1F365C !important;
     font-family: 'Inter', sans-serif !important;
     font-size: 16px !important;
     font-weight: 500 !important;
     text-transform: none !important;
+    text-decoration: none !important;
+
+    /* Aspetto e comportamento */
     border-radius: 8px !important;
-    text-decoration: none !important; /* Rimuove sottolineatura */
-    box-sizing: border-box; /* Include padding nella larghezza */
+    box-sizing: border-box !important;
 }
 
-/* --- Testo del titolo all’interno del box --- */
+/* --- Testo all’interno del box --- */
 .page-item-each .item-title {
-    color: black !important; /* Testo nero */
-    text-decoration: none !important; /* Nessuna sottolineatura */
-    text-align: center !important; /* Centra testo */
-}
-
-/* --- Mantiene lo stile e l’allineamento immagine --- */
-.display-image {
-    display: block !important;
-    margin: 0 auto !important;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important; /* Bordo sottile semitrasparente */
-    border-radius: 50% !important;
+    color: black !important;
+    text-decoration: none !important;
+    text-align: center !important;
 }
 
 /* --- Contenitore dei box centrato --- */
@@ -1499,3 +1497,21 @@ body,html{
     align-items: center !important;
 }
 
+/* --- Immagine del profilo centrata e con bordo --- */
+.display-image {
+    display: block !important;
+    margin: 0 auto !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 50% !important;
+    width: 180px !important;       /* dimensione regolata */
+    height: auto !important;
+}
+
+/* --- Responsività: su schermi piccoli i box diventano più larghi --- */
+@media (max-width: 600px) {
+    .page-item-each {
+        max-width: 90% !important;
+        font-size: 15px !important;
+        padding: 8px 12px !important;
+    }
+}
