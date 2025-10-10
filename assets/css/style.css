@@ -172,17 +172,13 @@ body,html{
 }
 
 .page-item-each {
-    color: black;
+    color: black; /* Colore testo */
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 500;
     text-transform: none;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none; 
+    text-decoration: none; /* Rimuove sottolineatura */
 }
 .page-item-wrap {
     margin: 16px 0;
@@ -435,9 +431,14 @@ body,html{
 .close-embed:hover{
     opacity:1
 }
-
 .cursor-pointer{
     cursor:pointer
+}
+.page-item-each{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .item-title{
     width:100%;
