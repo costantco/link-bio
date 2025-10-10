@@ -285,13 +285,15 @@ body,html{
     object-fit:cover
 }
 
-.display-image{
-    width:160px;
-    height:160px;
-    display:block;
-    border-radius:50%;
-    -o-object-fit:cover;
-    object-fit:cover
+.display-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
 }
 .text-center{
     text-align:center
