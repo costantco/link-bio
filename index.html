@@ -3,91 +3,149 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Claudio Costantino links</title>
-    <meta name="description" content="Link Bio di Claudio Costantino - Pagina con i miei link social e professionali" />
+    <title>Claudio Costantino - Link Bio</title>
+    <meta name="description" content="Link Bio di Claudio Costantino - Comunicatore scientifico CNR. Docu-serie Metamorphosis e contatti professionali">
+    <meta name="author" content="Claudio Costantino">
+    <meta name="keywords" content="Claudio Costantino, CNR, Metamorphosis, comunicazione scientifica, SCITEC">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Claudio Costantino - Link Bio">
+    <meta property="og:description" content="Link Bio di Claudio Costantino - Comunicatore scientifico CNR">
+    <meta property="og:image" content="https://costantco.github.io/link-bio/assets/images/profile.webp">
+    <meta property="og:url" content="https://costantco.github.io/link-bio/">
+    <meta property="og:type" content="profile">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Claudio Costantino - Link Bio">
+    <meta name="twitter:description" content="Link Bio di Claudio Costantino">
+    <meta name="twitter:image" content="https://costantco.github.io/link-bio/assets/images/profile.webp">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
-    <link rel="apple-touch-icon" sizes="360x360" href="assets/images/favicon.png">
-    <link rel="icon" href="assets/images/favicon.png" type="image/webp">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Stile principale -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- Solo la modifica del font del nome -->
-    <style>
-        .page-title {
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 700;
-            text-align: center;
-            color: #ffffff;
-            margin-top: 1.5rem;
-        }
-    </style>
 </head>
 
-<body>
-    <!-- Mantiene l'effetto di sfondo originale -->
-    <section class="animated-background">
+<body role="document">
+    <!-- Sfondo animato (decorativo) -->
+    <section class="animated-background" aria-hidden="true">
         <div id="stars1"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
     </section>
 
-    <div class="min-h-full flex-h-center" id="background_div">
-        <input type="hidden" value="https://bio.link" id="app-url">
-        <input type="hidden" value="null" id="is-featured">
-        <canvas id="bg-canvas" class="background-overlay"></canvas>
+    <main class="min-h-full flex-h-center" id="background_div">
+        <canvas id="bg-canvas" class="background-overlay" aria-hidden="true"></canvas>
 
         <div class="mt-48 page-full-wrap relative">
-            <input type="hidden" value="creator-page" id="page-type">
+            
+            <!-- Foto profilo -->
+            <img class="display-image m-auto" 
+                 src="assets/images/profile.webp" 
+                 alt="Foto profilo di Claudio Costantino"
+                 width="150" 
+                 height="150"
+                 loading="eager">
 
-            <!-- FOTO PROFILO -->
-            <img class="display-image m-auto" src="assets/images/Screenshot 2025-09-12 110524.png" alt="Claudio Costantino">
+            <!-- Nome -->
+            <h1 class="page-title page-text-color page-text-font mt-16 text-center">
+                Claudio Costantino
+            </h1>
 
-            <!-- NOME -->
-            <h2 class="page-title page-text-color page-text-font mt-16 text-center">Claudio Costantino</h2>
+            <!-- Sottotitolo opzionale -->
+            <p class="text-center mt-8" style="color: rgba(255,255,255,0.8); font-size: 1.1rem;">
+                Comunicazione Scientifica | CNR
+            </p>
 
-            <!-- LINK -->
-            <div class="mt-24">
+            <!-- Link -->
+            <nav aria-label="Link principali" class="mt-24">
+                <ul role="list" style="list-style: none; padding: 0; margin: 0;">
 
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a href="mailto:claudiocostantino@cnr.it" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/email.png" alt="Email Claudio Costantino"/>
-                        <span class="item-title text-center">Scrivimi</span>
-                    </a>
-                </div>
+                    <li class="page-item-wrap relative">
+                        <a href="mailto:claudiocostantino@cnr.it" 
+                           class="page-item-each py-10 flex-both-center"
+                           aria-label="Invia email a Claudio Costantino">
+                            <img class="link-each-image" 
+                                 src="assets/images/email.png" 
+                                 alt=""
+                                 aria-hidden="true"
+                                 width="24"
+                                 height="24"/>
+                            <span class="item-title text-center">Scrivimi</span>
+                        </a>
+                    </li>
 
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" href="https://www.scitec.cnr.it/in3d-ita/metamorphosis" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/scitec.png" alt="Sito Metamorphosis"/>
-                        <span class="item-title text-center">Docu-serie Metamorphosis</span>
-                    </a>
-                </div>
+                    <li class="page-item-wrap relative">
+                        <a target="_blank" 
+                           rel="noopener noreferrer"
+                           href="https://www.scitec.cnr.it/in3d-ita/metamorphosis" 
+                           class="page-item-each py-10 flex-both-center"
+                           aria-label="Visita il sito della docu-serie Metamorphosis">
+                            <img class="link-each-image" 
+                                 src="assets/images/scitec.png" 
+                                 alt=""
+                                 aria-hidden="true"
+                                 width="24"
+                                 height="24"/>
+                            <span class="item-title text-center">Docu-serie Metamorphosis</span>
+                        </a>
+                    </li>
 
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" href="https://www.linkedin.com/in/claudiocostantino/" class="page-item-each py-10 flex-both-center" data-id="261652" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/linkedin.png" alt="LinkedIn"/>
-                        <span class="item-title text-center">LinkedIn</span>
-                    </a>
-                </div>
+                    <li class="page-item-wrap relative">
+                        <a target="_blank" 
+                           rel="noopener noreferrer"
+                           href="https://www.linkedin.com/in/claudiocostantino/" 
+                           class="page-item-each py-10 flex-both-center"
+                           aria-label="Visita il profilo LinkedIn di Claudio Costantino">
+                            <img class="link-each-image" 
+                                 src="assets/images/linkedin.png" 
+                                 alt=""
+                                 aria-hidden="true"
+                                 width="24"
+                                 height="24"/>
+                            <span class="item-title text-center">LinkedIn</span>
+                        </a>
+                    </li>
 
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" href="https://www.instagram.com/costantco/" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/instagram.png" alt="Instagram"/>
-                        <span class="item-title text-center">Instagram</span>
-                    </a>
-                </div>
+                    <li class="page-item-wrap relative">
+                        <a target="_blank" 
+                           rel="noopener noreferrer"
+                           href="https://www.instagram.com/costantco/" 
+                           class="page-item-each py-10 flex-both-center"
+                           aria-label="Visita il profilo Instagram di Claudio Costantino">
+                            <img class="link-each-image" 
+                                 src="assets/images/instagram.png" 
+                                 alt=""
+                                 aria-hidden="true"
+                                 width="24"
+                                 height="24"/>
+                            <span class="item-title text-center">Instagram</span>
+                        </a>
+                    </li>
 
-            </div>                                                                                
+                </ul>
+            </nav>
+
+            <!-- Footer -->
+            <footer class="mt-48 pb-24 text-center" style="color: rgba(255,255,255,0.6); font-size: 0.875rem;">
+                <p>© 2025 Claudio Costantino</p>
+            </footer>
+            
         </div>
-    </div>
+    </main>
+
+    <!-- Script con defer -->
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
