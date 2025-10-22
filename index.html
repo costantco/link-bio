@@ -3,91 +3,141 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Claudio Costantino links</title>
-    <meta name="description" content="Communication specialist e Videomaker. PhD in Heritage Science. Scopri i miei progetti e seguimi sui social." />
+    <title>Claudio Costantino - Link Bio</title>
+    <meta name="description" content="Videomaker, comunicatore e ricercatore. PhD in Heritage Science. Scopri i miei progetti e seguimi sui social." />
     
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
     <link rel="apple-touch-icon" sizes="360x360" href="assets/images/favicon.png">
-    <link rel="icon" href="assets/images/favicon.png" type="image/webp">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://costantco.github.io/link-bio/">
+    <meta property="og:title" content="Claudio Costantino - Link Bio">
+    <meta property="og:description" content="Videomaker, comunicatore e ricercatore. PhD in Heritage Science.">
+    <meta property="og:image" content="https://costantco.github.io/link-bio/assets/images/Screenshot%202025-09-12%20110524.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://costantco.github.io/link-bio/">
+    <meta property="twitter:title" content="Claudio Costantino - Link Bio">
+    <meta property="twitter:description" content="Videomaker, comunicatore e ricercatore. PhD in Heritage Science.">
+    <meta property="twitter:image" content="https://costantco.github.io/link-bio/assets/images/Screenshot%202025-09-12%20110524.png">
 
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Stile principale -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- Solo la modifica del font del nome -->
-    <style>
-        .page-title {
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 700;
-            text-align: center;
-            color: #ffffff;
-            margin-top: 1.5rem;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Mantiene l'effetto di sfondo originale -->
-    <section class="animated-background">
-        <div id="stars1"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-    </section>
+    <!-- Animated gradient background -->
+    <div class="gradient-bg"></div>
 
-    <div class="min-h-full flex-h-center" id="background_div">
-        <input type="hidden" value="https://bio.link" id="app-url">
-        <input type="hidden" value="null" id="is-featured">
-        <canvas id="bg-canvas" class="background-overlay"></canvas>
+    <!-- Stelle animate -->
+    <div class="stars" id="stars"></div>
 
-        <div class="mt-48 page-full-wrap relative">
-            <input type="hidden" value="creator-page" id="page-type">
+    <!-- Container principale -->
+    <div class="container">
+        <!-- Profilo -->
+        <div class="profile">
+            <img 
+                class="profile-image" 
+                src="assets/images/Screenshot 2025-09-12 110524.png" 
+                alt="Claudio Costantino - Foto profilo"
+                loading="eager"
+            >
+            <h1 class="profile-name">Claudio Costantino</h1>
+            <p class="profile-bio">Videomaker • Comunicatore • PhD Heritage Science</p>
+        </div>
 
-            <!-- FOTO PROFILO -->
-            <img class="display-image m-auto" src="assets/images/Screenshot 2025-09-12 110524.png" alt="Claudio Costantino">
-
-            <!-- NOME -->
-            <h2 class="page-title page-text-color page-text-font mt-16 text-center">Claudio Costantino</h2>
-
-            <!-- LINK -->
-            <div class="mt-24">
-
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a href="mailto:claudiocostantino@cnr.it" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/email.png" alt="Email Claudio Costantino"/>
-                        <span class="item-title text-center">Scrivimi</span>
-                    </a>
+        <!-- Links -->
+        <div class="links">
+            <!-- Email -->
+            <a href="mailto:claudiocostantino@cnr.it" class="link-card" aria-label="Invia una email a Claudio Costantino">
+                <img class="link-icon" src="assets/images/email.png" alt="" loading="lazy">
+                <div class="link-content">
+                    <div class="link-title">Scrivimi</div>
+                    <div class="link-subtitle">claudiocostantino@cnr.it</div>
                 </div>
+                <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
 
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" href="https://www.scitec.cnr.it/in3d-ita/metamorphosis" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/scitec.png" alt="Sito Metamorphosis"/>
-                        <span class="item-title text-center">Docu-serie Metamorphosis</span>
-                    </a>
+            <!-- Metamorphosis -->
+            <a href="https://www.scitec.cnr.it/in3d-ita/metamorphosis" target="_blank" rel="noopener noreferrer" class="link-card" aria-label="Visita il sito della docu-serie Metamorphosis">
+                <img class="link-icon" src="assets/images/scitec.png" alt="" loading="lazy">
+                <div class="link-content">
+                    <div class="link-title">Docu-serie Metamorphosis</div>
+                    <div class="link-subtitle">Progetto CNR SCITEC</div>
                 </div>
+                <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
 
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" href="https://www.linkedin.com/in/claudiocostantino/" class="page-item-each py-10 flex-both-center" data-id="261652" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/linkedin.png" alt="LinkedIn"/>
-                        <span class="item-title text-center">LinkedIn</span>
-                    </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/claudiocostantino/" target="_blank" rel="noopener noreferrer" class="link-card" aria-label="Visita il profilo LinkedIn di Claudio Costantino">
+                <img class="link-icon" src="assets/images/linkedin.png" alt="" loading="lazy">
+                <div class="link-content">
+                    <div class="link-title">LinkedIn</div>
+                    <div class="link-subtitle">Connettiti con me</div>
                 </div>
+                <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
 
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" href="https://www.instagram.com/costantco/" class="page-item-each py-10 flex-both-center" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" src="assets/images/instagram.png" alt="Instagram"/>
-                        <span class="item-title text-center">Instagram</span>
-                    </a>
+            <!-- Portfolio Video -->
+            <a href="https://www.notion.so/costantco/Portfolio-video-Claudio-Costantino-1f1ad45bda7f8069b76ec0c02e529024" target="_blank" rel="noopener noreferrer" class="link-card" aria-label="Visita il portfolio video di Claudio Costantino">
+                <div class="link-icon emoji-icon" aria-hidden="true">📹</div>
+                <div class="link-content">
+                    <div class="link-title">Portfolio</div>
+                    <div class="link-subtitle">I miei lavori video</div>
                 </div>
-
-            </div>                                                                                
+                <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
         </div>
     </div>
+
+    <!-- Script per generare le stelle animate -->
+    <script>
+        // Attendi che il DOM sia completamente caricato
+        document.addEventListener('DOMContentLoaded', function() {
+            // Genera stelle animate ottimizzate
+            const starsContainer = document.getElementById('stars');
+            
+            if (!starsContainer) {
+                console.error('Container stelle non trovato');
+                return;
+            }
+
+            const starCount = 50; // Numero ottimizzato per performance
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                // Dimensione casuale (1-3px)
+                const size = Math.random() * 2 + 1;
+                star.style.width = size + 'px';
+                star.style.height = size + 'px';
+                
+                // Posizione casuale
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                
+                // Delay animazione casuale per effetto naturale
+                star.style.animationDelay = Math.random() * 3 + 's';
+                
+                starsContainer.appendChild(star);
+            }
+        });
+    </script>
 </body>
 </html>
